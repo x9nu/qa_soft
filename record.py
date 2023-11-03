@@ -65,5 +65,5 @@ def get_error_question_numbers(username, bankname):
 
 # 使用函数示例
 # 如果需要测试此函数，可以取消注释以下代码
-if __name__ == "__main__":
-    update_record('record.json', 'xxx', 'example.xls', '80%', [1, 3, 5])
+# if __name__ == "__main__":
+#     update_record('record.json', 'xxx', 'example.xls', '80%', [1, 3, 5])

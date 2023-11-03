@@ -95,6 +95,7 @@ class MainApp(QMainWindow):
         self.question_label.setFont(font)
 
     def loadQuestions(self):
+        self.question_states={}
         # 打开文件对话框让用户选择题库Excel文件
         self.file_path, _ = QFileDialog.getOpenFileName(self, "加载题库", "", "Excel文件 (*.xlsx *.xls)")
 
@@ -254,9 +255,9 @@ class MainApp(QMainWindow):
         update_record('record.json', '团子', self.file_path, accuracy, self.errors)
         QMessageBox.information(self, "完成", "交卷成功！")
 
-if __name__ == '__main__':
-    import sys
-    app = QApplication(sys.argv)
-    main_app = MainApp()
-    main_app.show()
-    sys.exit(app.exec_())
+# if __name__ == '__main__':
+#     import sys
+#     app = QApplication(sys.argv)
+#     main_app = MainApp()
+#     main_app.show()
+#     sys.exit(app.exec_())
