@@ -1,3 +1,7 @@
+## 刷题软件
+读取xlsx格式的题库，随刷随记录错题，由`record.json`维护错题，可以选择只刷错题。
+![`F16L8BS4(I7 Q{O(CT{{68](https://github.com/x9nu/qa_soft/assets/72782452/6ec4668f-e8c3-4801-8cfe-a2f23b516a65)
+
 之前打包一直不对劲，最后用多文件打包成exe：
 
 pyinstaller [主文件] -p [副文件] -p[其他副文件]
